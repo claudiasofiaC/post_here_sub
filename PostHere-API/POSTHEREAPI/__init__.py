@@ -1,4 +1,4 @@
-"""Entry point for Twitoff Flask App"""
+"""Entry point for Flask App"""
 
 from .app import create_app
 
