@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> Subreeddit Predictions For: </h1>
+        <h2> {{title}}</h2>
+        {% for p in predictions %}
+            <a href="https://www.reddit.com/r/{{p.name}}/submit?title={{title_url}}">
+                <p> {{p.name}} - {{p.confidence}}% Confidence </p>
+            </a>
+        {% endfor %}
+    </body>
+</html>
